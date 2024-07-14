@@ -1,0 +1,47 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.places-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+h1 {
+  color: #252627;
+  font-family: 'Roboto';
+}
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+  padding: 2px;
+  border-radius: 5px;
+  height: 30px;
+}
+.search-icon {
+  width: 18px;
+}
+.search-input {
+  background-color: #f1f5f9;
+  font-family: 'Roboto';
+  border: none;
+}
+img {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+@media (min-width: 576px) {
+  .places-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .places-container {
+    flex-direction: column;
+  }
+}
